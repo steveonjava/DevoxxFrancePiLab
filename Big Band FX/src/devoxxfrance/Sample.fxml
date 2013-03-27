@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="823.0" prefWidth="969.0" xmlns:fx="http://javafx.com/fxml" fx:controller="devoxxfrance.SampleController">
+  <children>
+    <SplitPane dividerPositions="0.31437435367114785" focusTraversable="true" prefHeight="823.0" prefWidth="969.0">
+      <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+          <children>
+            <ListView fx:id="listView" prefHeight="715.0" prefWidth="223.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+          </children>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+          <children>
+            <ImageView fx:id="imageView" fitHeight="320.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="14.0">
+              <image>
+                <Image url="@../../../Devoxx/Devoxx%20Big%20Bang%20Demo%20files/Images/Penny.jpg" preserveRatio="false" smooth="false" />
+              </image>
+            </ImageView>
+            <Label fx:id="nameLabel" layoutX="330.0" layoutY="14.0" prefWidth="301.0" text="Label">
+              <font>
+                <Font size="24.0" />
+              </font>
+            </Label>
+            <Label id="realName" fx:id="realNameLabel" layoutX="330.0" layoutY="43.0" prefWidth="301.0" text="Label">
+              <font>
+                <Font size="17.0" fx:id="x1" />
+              </font>
+            </Label>
+            <Label fx:id="professionLabel" font="$x1" layoutX="330.0" layoutY="64.0" prefWidth="301.0" text="Label" />
+            <TextArea fx:id="bioTextArea" layoutX="14.0" layoutY="352.0" prefHeight="455.0" prefWidth="617.0" wrapText="true" />
+          </children>
+        </AnchorPane>
+      </items>
+    </SplitPane>
+  </children>
+</AnchorPane>
